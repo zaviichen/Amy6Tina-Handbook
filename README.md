@@ -2,12 +2,12 @@
 
 面向 [期权坤哥 | Sober CFA（@Amy6Tina）](https://x.com/Amy6Tina) 的 Articles / 推文体系化精解，风格对标 [CJ-DeFi-Handbook](https://suoha888.github.io/CJ-DeFi-Handbook/)。
 
-**在线阅读（GitHub Pages）**：[https://zaviichen.github.io/Amy6Tina-Handbook/](https://zaviichen.github.io/Amy6Tina-Handbook/)
+**在线阅读：** [https://zaviichen.github.io/Amy6Tina-Handbook/](https://zaviichen.github.io/Amy6Tina-Handbook/)
 
-- **数据**：`data/raw_tweets.json`（已下载 id 请勿重复抓取，只允许按 id 追加）
-- **分析**：`analysis/`（已有的 LLM 精读会编入 Key Takeaways / 机制推演）
-- **规格**：`SITE_SPEC.md`
-- **分卷**：`analysis/volumes.json`（11 卷，全量 Articles）+ `tools/build_handbook.py`（编成站点 JSON）
+> **首次上线（只需一次）：** 打开 [Settings → Pages](https://github.com/zaviichen/Amy6Tina-Handbook/settings/pages) → **Source** 选 **Deploy from a branch** → Branch **`gh-pages`** / folder **`/(root)`** → Save。保存后约 1 分钟站点即可访问。也可选 Source = **GitHub Actions**。
+
+- **数据**：`data/raw_tweets.json`（135 篇 Articles + 42 条 Posts；已下载 id 请勿重复抓取，只允许按 id 追加）
+- **分析 / 分卷**：`analysis/volumes.json`（11 卷）+ `analysis/articles/*.parsed.json`
 - **规格**：`SITE_SPEC.md`
 
 ## 站点里有什么
