@@ -1,0 +1,158 @@
+[
+  {
+    "id": "2094643748907233320",
+    "title": "佩洛西又出手了：LEAPS老手的1350万美元AI电力豪赌",
+    "topics": [
+      "LEAPS options",
+      "deep-in-the-money calls",
+      "stock replacement strategy",
+      "AI infrastructure",
+      "Bloom Energy",
+      "Intel",
+      "Pelosi trades",
+      "risk management",
+      "STOCK Act disclosures",
+      "options education"
+    ],
+    "key_takeaways": [
+      "Pelosi family added Bloom Energy and Intel using stock plus deep-in-the-money LEAPS calls expiring June 2027, not short-term speculative options.",
+      "The structure is a stock-replacement strategy: deep ITM calls with roughly 0.9 delta provide near-stock upside while defining downside to the premium paid.",
+      "The thesis targets AI infrastructure 'picks and shovels' including compute chips, power, on-site fuel cells, and CPUs rather than chasing AI model companies.",
+      "Long-dated LEAPS give the investment thesis time to play out; many options losses come from wrong time horizon rather than wrong direction.",
+      "Following disclosed political trades has limits because STOCK Act allows 45-day delayed disclosure and the market may already price in the news."
+    ],
+    "strategies": [
+      "Stock + Deep ITM LEAPS Call (Stock Replacement)",
+      "Long-Dated LEAPS Call",
+      "Bullish Call Option",
+      "Thematic / Sector Investing",
+      "Defined-Risk Leverage"
+    ],
+    "difficulty": "intermediate",
+    "handbook_volume": "Options Strategy / LEAPS & Stock Replacement",
+    "quotes": [
+      "期权不是赌博工具，是思维的延伸。",
+      "用期权放大确定性，而不是制造杠杆。",
+      "选赛道而非选个股。"
+    ],
+    "summary": "The article analyzes Nancy Pelosi family's July 2026 disclosures showing new Bloom Energy and added Intel positions built with stock plus deep-in-the-money LEAPS calls. It explains the stock-replacement logic, defined-risk leverage, and long-dated thesis around the AI infrastructure supply chain. It also cautions that delayed STOCK Act disclosures mean followers may buy after the news is priced in."
+  },
+  {
+    "id": "2094278739731599762",
+    "title": "做空5.5万亿的英伟达：大空头伯里的期权牌局",
+    "topics": [
+      "英伟达",
+      "Michael Burry",
+      "期权交易",
+      "做空",
+      "对冲策略",
+      "尾部风险",
+      "隐含波动率",
+      "AI泡沫",
+      "折旧会计",
+      "市场共识"
+    ],
+    "key_takeaways": [
+      "伯里用大量空头股票和看跌期权押注英伟达下跌，同时买入少量看涨期权作为防踏空保险，构成非对称做空组合。",
+      "看涨期权是事件驱动对冲：财报后英伟达暴涨，他卖出一半锁定50%-60%利润，用完即弃。",
+      "伯里的核心空头论据是AI需求自循环、GPU折旧低估利润、以及超大规模资本开支周期可能提前结束。",
+      "英伟达以A100长期商用、H100/B200租赁价格上涨、AWS大额部署和强劲财报指引回应看空。",
+      "做空泡沫的难点不是方向而是时间；专业玩家用期权管理“赌错”的代价和资金/时间价值损耗。",
+      "当市场共识极强且VIX低位时，尾部保护可能便宜而有效；伯里赌的是波动率非线性爆发，而非短期方向。"
+    ],
+    "strategies": [
+      "Short stock + long puts + protective calls",
+      "Protective call hedge on short position",
+      "Event-driven call monetization",
+      "Tail-risk put (2026/2027 LEAPS)",
+      "Long convexity / volatility非对称组合"
+    ],
+    "difficulty": "advanced",
+    "handbook_volume": "期权策略与尾部对冲 / Options Strategy & Tail Hedging",
+    "quotes": [
+      "他是在给空头仓位买一份“万一我错了”的保险。",
+      "普通散户赌方向，专业玩家管理“赌错”的代价。",
+      "不是放大杠杆，不是以小博大，而是让你在“全世界都反对你”的时候，依然有结构化的方式活下去。"
+    ],
+    "summary": "文章复盘迈克尔·伯里做空英伟达的期权结构：核心是空头股票与看跌期权押注下行，辅以12月到期250-290美元看涨期权对冲逼空，财报后卖出半数Call兑现事件利润。作者从期权视角强调这是“做多凸性”与尾部风险交易，并讨论AI需求自循环、折旧会计和垄断持续性等空头逻辑，以及英伟达的业绩与租赁价格反驳。最终落点是：做空泡沫最难的是时间，期权价值在于管理“全世界比你乐观”时活下去的成本。"
+  },
+  {
+    "id": "2093556456645923115",
+    "title": "卖出1张期权，为什么上交所要冻结你5000块，鸭站只要500？",
+    "topics": [
+      "期权保证金制度",
+      "上交所ETF期权",
+      "美股Portfolio Margin组合保证金",
+      "加密货币期权平台实时清算",
+      "卖方策略资金效率",
+      "尾部风险与隔夜跳空",
+      "组合策略（铁鹰/蝶式/日历价差）",
+      "做市商深度与T+1交割"
+    ],
+    "key_takeaways": [
+      "保证金制度的唯一目标是确保卖方在最坏情况下仍能履约，但各市场对“最坏情况”的定义不同，导致资金占用差3-5倍。",
+      "上交所用固定参数覆盖风险：个股21%（两个连续跌停）、ETF 12%，本质是“次日才能处置风险”的保守设计。",
+      "美股Portfolio Margin用SPAN/TIMS模型扫描多种场景取最大亏损，有对冲时保证金可降50-70%，铁鹰策略可能只占最大损失金额。",
+      "加密期权平台维持保证金系数仅3%，因为24/7实时盯市、秒级清算，只需覆盖“下一分钟”的波动，不存在隔夜累积风险。",
+      "上交所难以降保证金源于四点：做市商深度不足、T+1交割无法盘中对冲、缺少组合保证金、散户占比高需要保护机制。",
+      "制度成本是卖方为市场不成熟支付的价格；能高制度成本环境下稳定盈利的人，在更自由的市场只会更强。"
+    ],
+    "strategies": [
+      "卖出平值ETF认购期权",
+      "铁鹰策略（Iron Condor）",
+      "蝶式价差",
+      "日历价差",
+      "卖出深度虚值Put收租",
+      "组合策略保证金减免优化",
+      "留30%安全边际的仓位管理",
+      "多市场多策略配置"
+    ],
+    "difficulty": "intermediate",
+    "handbook_volume": "衍生品与期权卖方卷（Options & Margin Mechanics）",
+    "quotes": [
+      "制度成本 = 你为市场不成熟支付的价格。",
+      "当风险可以被实时发现和处置，保证金就不需要为“隔夜最坏情况”预留那么多了。",
+      "约束是磨刀石。"
+    ],
+    "summary": "文章对比上交所ETF/个股期权、美股标准与Portfolio Margin账户、以及加密期权平台三者的保证金机制，指出差异根源在于风控系统能多快发现并处置风险：上交所需覆盖两天涨跌停故用固定12%/21%参数，美股用模型扫描场景取最大亏损，加密平台秒级清算只需覆盖极短窗口。作者进一步解释上交所难以降保证金的基础设施原因（做市深度、T+1交割、无组合保证金、散户占比高），并给出卖方在现有规则下的优化路径——善用组合保证金减免、严格控制仓位、理解“制度价格”并做多市场配置。"
+  },
+  {
+    "id": "2092830486456660011",
+    "title": "卖 Put 老亏钱？你可能忽略了这四件事",
+    "topics": [
+      "期权卖方",
+      "卖出看跌期权",
+      "IV Rank",
+      "年化收益",
+      "波动率风险溢价 VRP",
+      "接货意愿",
+      "风险管理",
+      "现金担保 Put"
+    ],
+    "key_takeaways": [
+      "卖 Put 本质是卖保险，不能只看权利金肥，必须筛选低赔付概率且保费充足的机会。",
+      "下单前需过四道筛子：IV Rank 够高、年化收益达标、IV 跑赢 HV（VRP 为正）、真让你接货你认不认。",
+      "权利金绝对值有欺骗性，必须做年化处理：年化收益 =（权利金 ÷ 行权价）×（365 ÷ 剩余天数）。",
+      "IV Rank 衡量当前 IV 在 52 周区间中的分位，比 IV 绝对值更有意义，低于 50% 不宜急着卖 Put。",
+      "VRP = IV - HV 是卖方真正的利润来源，但 IV > HV 只是概率优势，不是包赚。",
+      "仓位与接货资金必须匹配，账户资金不足却超卖不是策略，是赌命。"
+    ],
+    "strategies": [
+      "卖出看跌期权（卖 Put）",
+      "现金担保卖 Put（Cash-Secured Put）",
+      "四道筛子过滤法",
+      "年化收益计算",
+      "IV Rank 筛选",
+      "IV vs HV / VRP 筛选",
+      "接货意愿与资金管理"
+    ],
+    "difficulty": "intermediate",
+    "handbook_volume": "期权卖方 / Options Selling",
+    "quotes": [
+      "卖 Put 本质就是卖保险。",
+      "四道筛子全过了再下手。少过一道，就不是做交易，是在赌运气。",
+      "期权卖方比的从来不是谁赚得多，而是谁活得久。"
+    ],
+    "summary": "本文系统讲解卖出看跌期权前必须通过的四道筛子：IV Rank、年化收益、IV 与 HV 的波动率风险溢价、以及真实接货意愿。作者以 510300 为例，强调权利金肥厚背后是风险溢价，卖方应像保险公司一样只承接赔付概率低且保费充足的机会。核心不是追求单次高收益，而是通过筛选与资金管理实现长期生存。"
+  }
+]

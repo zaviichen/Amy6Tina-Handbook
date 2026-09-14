@@ -1,0 +1,11 @@
+{
+  "count": 114,
+  "article_count": 67,
+  "post_count": 47,
+  "oldest_date": "2024-09-30T05:21:32.000Z",
+  "newest_date": "2026-09-14T11:56:38.000Z",
+  "catalog_size": 135,
+  "downloaded_ids": 114,
+  "notes": "Local corpus is canonical. Full article bodies via api.fxtwitter.com/2/thread/{id}. Skip ids with full bodies already in raw_tweets.json.",
+  "updated_at": "2026-09-14T14:02:18.681864Z"
+}

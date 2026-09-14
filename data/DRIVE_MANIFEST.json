@@ -1,0 +1,22 @@
+{
+  "project": "amy6tina-handbook",
+  "local_root": "/workspace/amy6tina-handbook",
+  "ready_for_google_drive": true,
+  "do_not_redownload_ids_file": "/workspace/amy6tina-handbook/data/downloaded_ids.txt",
+  "counts": {
+    "raw_items": 60,
+    "articles_full": 11,
+    "posts": 49,
+    "catalog_article_refs": 120
+  },
+  "primary_files": [
+    "data/raw_tweets.json",
+    "data/articles_catalog.json",
+    "data/downloaded_ids.txt",
+    "data/profile.json",
+    "data/scrape_status.json",
+    "data/body_export_progress.json",
+    "analysis/"
+  ],
+  "notes": "Ids in downloaded_ids.txt / raw_tweets.json must not be re-fetched. Append-only for new ids. Upload this folder to Google Drive later."
+}

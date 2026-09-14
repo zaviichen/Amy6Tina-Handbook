@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-09-14T13:51:00Z",
+  "profile_articles_url": "https://x.com/Amy6Tina/articles",
+  "profile_result": "Articles tab initially displayed 2026 items and lazy-scrolling reached Aug 13, 2026; continued scrolling did not expose the older 2024-2025 entries, so the tab appears to have a false/lazy end for this session.",
+  "discovery_searches": [
+    "from:Amy6Tina 本周 since:2024-01-01 until:2025-01-01 (Latest)",
+    "from:Amy6Tina 本周市场分析 since:2024-01-01 until:2026-01-01 (Latest)",
+    "from:Amy6Tina since:2024-01-01 until:2026-01-01 (Latest)"
+  ],
+  "search_result": "The 2024 date-window search surfaced Article cards from Sep 29 through Dec 30, 2024. The exact user-provided 1858317948475392017 was already in raw_tweets.json and downloaded_ids.txt, so it was not redownloaded.",
+  "importer": "/workspace/amy6tina-handbook/tools/import_article_fxtwitter.py; importer returned full article bodies from api.fxtwitter.com and merged raw_tweets.json/articles_catalog.json.",
+  "new_article_ids": [],
+  "new_article_count": 0,
+  "non_article_candidates_skipped": [
+    "1837757776145305706",
+    "1832381935362175375"
+  ]
+}

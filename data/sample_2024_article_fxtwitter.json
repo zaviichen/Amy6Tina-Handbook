@@ -1,0 +1,696 @@
+{
+  "url": "https://x.com/Amy6Tina/status/1858317948475392017",
+  "id": "1858317948475392017",
+  "text": "",
+  "raw_text": {
+    "text": "https://t.co/5vTlutxuzW",
+    "display_text_range": [
+      0,
+      23
+    ],
+    "facets": []
+  },
+  "author": {
+    "screen_name": "Amy6Tina",
+    "url": "https://x.com/Amy6Tina",
+    "id": "1453699244116774920",
+    "followers": 17515,
+    "following": 99,
+    "likes": 25301,
+    "media_count": 3901,
+    "name": "期权坤哥 | Sober CFA",
+    "description": "｜助教微信：April1336 ｜\n｜全球华人期权精英俱乐部：https://sober-club.com/｜\n｜Deribit（你10%减免）： https://www.deribit.com/?reg=18775.7600 ｜",
+    "raw_description": {
+      "text": "｜助教微信：April1336 ｜\n｜全球华人期权精英俱乐部：https://t.co/4anPnQVmUC｜\n｜Deribit（你10%减免）： https://t.co/bpfuD6m9yq ｜",
+      "facets": [
+        {
+          "type": "url",
+          "indices": [
+            31,
+            54
+          ],
+          "original": "https://t.co/4anPnQVmUC",
+          "replacement": "https://sober-club.com/",
+          "display": "sober-club.com"
+        },
+        {
+          "type": "url",
+          "indices": [
+            74,
+            97
+          ],
+          "original": "https://t.co/bpfuD6m9yq",
+          "replacement": "https://www.deribit.com/?reg=18775.7600",
+          "display": "deribit.com/?reg=18775.7600"
+        }
+      ]
+    },
+    "location": "全球华人期权精英俱乐部",
+    "banner_url": "https://pbs.twimg.com/profile_banners/1453699244116774920/1765541637",
+    "avatar_url": "https://pbs.twimg.com/profile_images/2064658552560762880/kSRZp0Wb_200x200.jpg",
+    "joined": "Thu Oct 28 12:24:50 +0000 2021",
+    "protected": false,
+    "website": {
+      "url": "https://sober-club.com",
+      "display_url": "sober-club.com"
+    },
+    "verification": {
+      "verified": true,
+      "verified_at": null,
+      "type": "individual"
+    },
+    "avatar_color": null
+  },
+  "replies": 2,
+  "retweets": 0,
+  "likes": 6,
+  "bookmarks": 0,
+  "quotes": 0,
+  "created_at": "Mon Nov 18 01:14:59 +0000 2024",
+  "created_timestamp": 1731892499,
+  "possibly_sensitive": false,
+  "views": 1262,
+  "is_note_tweet": false,
+  "community_note": null,
+  "lang": null,
+  "replying_to": null,
+  "replying_to_status": null,
+  "source": "Twitter Web App",
+  "article": {
+    "created_at": "2024-11-18T01:14:59.000Z",
+    "modified_at": "2024-11-18T01:14:59.000Z",
+    "id": "1858317060243402752",
+    "title": "神经紧绷——（本周市场分析11月18日） ",
+    "preview_text": "上周，几个主要资产都开始都下降通道，针对星友们关心的长期美债我说了自己的看法。（具体可以查看星球置顶的小文）\n一、美股&美债",
+    "cover_media": {
+      "id": "QXBpTWVkaWE6DAAFCgABGcoRklqbcAAKAAIULJPCr9WQCAAA",
+      "media_id": "1858317116526784512",
+      "media_info": {
+        "__typename": "ApiImage",
+        "color_info": {
+          "palette": [
+            {
+              "percentage": 80.3,
+              "rgb": {
+                "blue": 244,
+                "green": 225,
+                "red": 224
+              }
+            },
+            {
+              "percentage": 9.76,
+              "rgb": {
+                "blue": 86,
+                "green": 78,
+                "red": 198
+              }
+            },
+            {
+              "percentage": 5.87,
+              "rgb": {
+                "blue": 145,
+                "green": 136,
+                "red": 203
+              }
+            },
+            {
+              "percentage": 2.6,
+              "rgb": {
+                "blue": 239,
+                "green": 213,
+                "red": 189
+              }
+            },
+            {
+              "percentage": 1.26,
+              "rgb": {
+                "blue": 123,
+                "green": 117,
+                "red": 203
+              }
+            }
+          ]
+        },
+        "original_img_height": 512,
+        "original_img_url": "https://pbs.twimg.com/media/GcoRklqbcAAVsRE.jpg",
+        "original_img_width": 1280
+      },
+      "media_key": "3_1858317116526784512"
+    },
+    "content": {
+      "blocks": [
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "5ne64",
+          "text": "上周，几个主要资产都开始都下降通道，针对星友们关心的长期美债我说了自己的看法。（具体可以查看星球置顶的小文）",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 7,
+              "offset": 0,
+              "style": "Bold"
+            }
+          ],
+          "key": "4r1k6",
+          "text": "一、美股&美债",
+          "type": "header-two"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "57k21",
+          "text": "上周主要资产都在下跌，包括美股、美债、大宗、A股和港股。（除了加密市场的BTC）我们需要观察这种流动性收紧是暂时性的还是短期无法快速恢复，大概率11月底之前就能见分晓。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "3p5a0",
+          "text": "如果是暂时性的那么就会像8月5日黑色星期一一样，我们做空一下VIX衍生品或者Dvol进行快速获利。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "ao5ch",
+          "text": "如果不是，那么可能就会有的更大的危机到来，所以我本周写的主题是“神经紧绷”。类比过去的话可能就是08年金融危机的时候那一个月的情景，具体我们还是要拭目以待！",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "bt1de",
+          "text": "下面两张是星球分享的图片，我个人认为还是要非常重视股神对于风险规避的一些操作。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [
+            {
+              "key": 0,
+              "length": 1,
+              "offset": 0
+            }
+          ],
+          "inlineStyleRanges": [],
+          "key": "33ft8",
+          "text": " ",
+          "type": "atomic"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "bq6d2",
+          "text": "对于美债，我还是维持之前观点，因为现在美债多头仍以下2个优势：",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 35,
+              "offset": 0,
+              "style": "Bold"
+            }
+          ],
+          "key": "a008q",
+          "text": "①美国的通胀预期已经较为稳定，高企的美元实际利率在全球仍有较高的吸引力",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 42,
+              "offset": 0,
+              "style": "Bold"
+            }
+          ],
+          "key": "1lek6",
+          "text": "②如果美债收益率继续走高，美元大概率会继续升值，那么持有美元资产还是有较大的优势的。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "bppl0",
+          "text": "具体一些期权操作也会分享在星球中",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 10,
+              "offset": 0,
+              "style": "Bold"
+            }
+          ],
+          "key": "86ijg",
+          "text": "二、A股、H股和中概",
+          "type": "header-two"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "f67s9",
+          "text": "上周A股市场整体下跌，小盘股整体更加强势一些，整体市场情绪后半周出现一些乏力迹象。目前A股的中短期方向仍然不明朗。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "1c3u2",
+          "text": "整体H股结束横盘选择向下走，恒生指数的向下跌破也代表海外对冲基金这波短线交易的结束。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "bo09i",
+          "text": "债券市场，本周超长期中债利率触及9月26日收盘位置后，再次回升，我个人预计如果没有新的基本面数据支持，长期中债利率大概率会横盘震荡，难有像之前那么流畅的走势。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "c62ou",
+          "text": "如果各位玩家认为恒生指数的参与者结构比A股更理性，可以将恒生指数作为这一轮政策组合拳落地后的“客观”定价参考。但如果加载一些外资定价负面影响，我个人倾向于恒指定价会较“客观”稍低。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "b7ghl",
+          "text": "A股大概率很难跌回9月起点，毕竟政策是实打实的。基本仓位，我个人主观认为大A长期多头要允许这个部位随波起伏。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "a9c6a",
+          "text": "从沪深300的SKEW来看，整体市场赌涨情绪已经基本消散，上周开始出现防大跌交易思路。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "a0pm4",
+          "text": "对于大A交易波动率的玩家来说，这一轮降波到18%-19%还是有可能的，再低的波动率不要奢求。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 6,
+              "offset": 0,
+              "style": "Bold"
+            }
+          ],
+          "key": "co9bn",
+          "text": "三、加密市场",
+          "type": "header-two"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "7qvoj",
+          "text": "上周BTC整体仍然在高位盘整并未受到美股大跌影响，且稳定币持续新高。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "5m62c",
+          "text": "且上周呈现出一定的BTC.D高位后的溢出效应，比如Doge、Near、XRP等标的出现大幅上涨，也有部分交易这类山寨币期权的玩家收益颇丰。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "15r34",
+          "text": "但是，坦白来讲如果如第一部分美股出现大的剧烈下跌，加密市场很难独善其身；如果想要做多的玩家利用期权做+delta在未来市场情绪极度疯狂阶段安全性会远高于现货和杠杆期货多头。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 6,
+              "offset": 0,
+              "style": "Bold"
+            }
+          ],
+          "key": "98sqp",
+          "text": "四、期权大赛",
+          "type": "header-two"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 3,
+              "offset": 5,
+              "style": "Bold"
+            }
+          ],
+          "key": "fc2s6",
+          "text": "期权大赛在月子哥和各位小伙伴的努力下，团队终于冲到了暂时第一名。如果想要一起分享200000美金比赛奖金的玩家，可以添加助理微信：April1336",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [
+            {
+              "key": 1,
+              "length": 1,
+              "offset": 0
+            }
+          ],
+          "inlineStyleRanges": [],
+          "key": "bqcog",
+          "text": " ",
+          "type": "atomic"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 3,
+              "offset": 0,
+              "style": "Bold"
+            }
+          ],
+          "key": "lq80",
+          "text": "结语：",
+          "type": "header-two"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "e6ts0",
+          "text": "目前整个市场相较于去年有非常大的不确定性。我反复检查了自己目前重仓持有的现货，依然觉得非常安心。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 41,
+              "offset": 16,
+              "style": "Bold"
+            },
+            {
+              "length": 40,
+              "offset": 17,
+              "style": "Italic"
+            }
+          ],
+          "key": "7e38b",
+          "text": "最后分享一句我觉得蛮有意思的话：“标的物并不知道你持有它。乐观与悲观这些字眼的背后还是人的情绪变化，而不是事实。”",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 12,
+              "offset": 0,
+              "style": "Bold"
+            }
+          ],
+          "key": "antgc",
+          "text": "Sober聊期权知识星球是我运营的一个高效、高质量的投资、交易学习平台，每天会更新一些我独家整理的投资资料，也会给大家回答所有问题，有问必答，专注加密、A股、美股核心标的+期权策略。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 26,
+              "offset": 0,
+              "style": "Bold"
+            }
+          ],
+          "key": "73eev",
+          "text": "如果你学习更多投资知识，请加入Sober聊期权星球。",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [
+            {
+              "length": 25,
+              "offset": 0,
+              "style": "Bold"
+            }
+          ],
+          "key": "7oo5p",
+          "text": "也可添加Sober助理微信：April1336  ",
+          "type": "unstyled"
+        },
+        {
+          "data": {},
+          "entityRanges": [
+            {
+              "key": 2,
+              "length": 1,
+              "offset": 0
+            }
+          ],
+          "inlineStyleRanges": [],
+          "key": "76qe6",
+          "text": " ",
+          "type": "atomic"
+        },
+        {
+          "data": {},
+          "entityRanges": [],
+          "inlineStyleRanges": [],
+          "key": "bm4gi",
+          "text": "个人观点，仅供参考",
+          "type": "unstyled"
+        }
+      ],
+      "entityMap": [
+        {
+          "key": "0",
+          "value": {
+            "data": {
+              "entityKey": "60c813c9-dc82-4b8f-9317-8d29b35302cc",
+              "mediaItems": [
+                {
+                  "localMediaId": "2",
+                  "mediaCategory": "DraftTweetImage",
+                  "mediaId": "1858317342998253568"
+                }
+              ]
+            },
+            "mutability": "Immutable",
+            "type": "MEDIA"
+          }
+        },
+        {
+          "key": "1",
+          "value": {
+            "data": {
+              "entityKey": "7b588b0b-8518-4e74-8aea-36870bab08a2",
+              "mediaItems": [
+                {
+                  "localMediaId": "4",
+                  "mediaCategory": "DraftTweetImage",
+                  "mediaId": "1858317559239729152"
+                }
+              ]
+            },
+            "mutability": "Immutable",
+            "type": "MEDIA"
+          }
+        },
+        {
+          "key": "2",
+          "value": {
+            "data": {
+              "entityKey": "75bfe4d4-5e50-4f54-a692-fa3a7e723899",
+              "mediaItems": [
+                {
+                  "localMediaId": "6",
+                  "mediaCategory": "DraftTweetImage",
+                  "mediaId": "1858317672859176960"
+                }
+              ]
+            },
+            "mutability": "Immutable",
+            "type": "MEDIA"
+          }
+        }
+      ]
+    },
+    "media_entities": [
+      {
+        "id": "QXBpTWVkaWE6DAAFCgABGcoRxxVb0AAKAAIULJPCr9WQCAAA",
+        "media_id": "1858317342998253568",
+        "media_info": {
+          "__typename": "ApiImage",
+          "color_info": {
+            "palette": [
+              {
+                "percentage": 99.75,
+                "rgb": {
+                  "blue": 255,
+                  "green": 255,
+                  "red": 255
+                }
+              },
+              {
+                "percentage": 0.1,
+                "rgb": {
+                  "blue": 204,
+                  "green": 192,
+                  "red": 177
+                }
+              }
+            ]
+          },
+          "original_img_height": 525,
+          "original_img_url": "https://pbs.twimg.com/media/GcoRxxVb0AAY-v1.jpg",
+          "original_img_width": 985
+        },
+        "media_key": "3_1858317342998253568"
+      },
+      {
+        "id": "QXBpTWVkaWE6DAAFCgABGcoR+W5a4AAKAAIULJPCr9WQCAAA",
+        "media_id": "1858317559239729152",
+        "media_info": {
+          "__typename": "ApiImage",
+          "color_info": {
+            "palette": [
+              {
+                "percentage": 89.21,
+                "rgb": {
+                  "blue": 15,
+                  "green": 13,
+                  "red": 10
+                }
+              },
+              {
+                "percentage": 2.11,
+                "rgb": {
+                  "blue": 8,
+                  "green": 7,
+                  "red": 112
+                }
+              },
+              {
+                "percentage": 2.09,
+                "rgb": {
+                  "blue": 203,
+                  "green": 179,
+                  "red": 172
+                }
+              },
+              {
+                "percentage": 1.18,
+                "rgb": {
+                  "blue": 59,
+                  "green": 62,
+                  "red": 8
+                }
+              },
+              {
+                "percentage": 0.52,
+                "rgb": {
+                  "blue": 61,
+                  "green": 37,
+                  "red": 12
+                }
+              }
+            ]
+          },
+          "original_img_height": 266,
+          "original_img_url": "https://pbs.twimg.com/media/GcoR-W5a4AAtNFp.png",
+          "original_img_width": 509
+        },
+        "media_key": "3_1858317559239729152"
+      },
+      {
+        "id": "QXBpTWVkaWE6DAAFCgABGcoSE+KaEAAKAAIULJPCr9WQCAAA",
+        "media_id": "1858317672859176960",
+        "media_info": {
+          "__typename": "ApiImage",
+          "color_info": {
+            "palette": [
+              {
+                "percentage": 94.14,
+                "rgb": {
+                  "blue": 255,
+                  "green": 255,
+                  "red": 255
+                }
+              },
+              {
+                "percentage": 4.58,
+                "rgb": {
+                  "blue": 150,
+                  "green": 177,
+                  "red": 127
+                }
+              },
+              {
+                "percentage": 1.14,
+                "rgb": {
+                  "blue": 119,
+                  "green": 119,
+                  "red": 119
+                }
+              }
+            ]
+          },
+          "original_img_height": 479,
+          "original_img_url": "https://pbs.twimg.com/media/GcoSE-KaEAA1w9d.jpg",
+          "original_img_width": 929
+        },
+        "media_key": "3_1858317672859176960"
+      }
+    ]
+  },
+  "twitter_card": "tweet",
+  "color": null,
+  "provider": "twitter",
+  "reposted_by": null
+}
