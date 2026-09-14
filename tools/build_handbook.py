@@ -11,7 +11,13 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from volume_map import LOOP, UNASSIGNED_VOLUME, VOLUMES
+from volume_map import (
+    LOOP,
+    NOTES_VOLUME_ID,
+    UNASSIGNED_VOLUME,
+    VOLUME_KEYWORDS,
+    load_volume_plan,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW_PATH = ROOT / "data" / "raw_tweets.json"
@@ -188,6 +194,47 @@ def attach_posts(posts: list[dict], keywords: list[str], used: set[str]) -> list
     return picked
 
 
+def score_post_article(post: dict, article: dict) -> int:
+    ph = haystack(post).lower()
+    title = (article.get("title") or "").strip()
+    if not title:
+        return 0
+    t = title.lower()
+    score = 0
+    if t in ph:
+        score += 24
+    tokens = re.findall(r"[\u4e00-\u9fff]{2,}|[A-Za-z0-9]{3,}", title)
+    score += sum(2 for tok in tokens if tok.lower() in ph)
+    return score
+
+
+def assign_post_to_article(post: dict, articles: list[dict], min_score: int = 6) -> dict | None:
+    best = None
+    best_score = 0
+    for art in articles:
+        s = score_post_article(post, art)
+        if s > best_score:
+            best_score, best = s, art
+    return best if best_score >= min_score else None
+
+
+def fallback_volume_id(article: dict, analyses: dict[str, dict], plan: list[dict]) -> str | None:
+    a = analyses.get(article["id"]) or {}
+    hv = (a.get("handbook_volume") or "").strip()
+    if hv:
+        for vol in plan:
+            if hv == vol["title"] or hv in vol["title"] or vol["title"] in hv:
+                return vol["id"]
+    h = haystack(article)
+    best_id = None
+    best = 0
+    for vid, keys in VOLUME_KEYWORDS.items():
+        s = sum(1 for k in keys if k.lower() in h.lower())
+        if s > best:
+            best, best_id = s, vid
+    return best_id if best >= 2 else None
+
+
 def build_topic_analysis(items: list[dict], analyses: dict[str, dict]) -> dict:
     takeaways: list[str] = []
     quotes: list[str] = []
@@ -309,36 +356,52 @@ def main() -> None:
     used_posts: set[str] = set()
     volumes_out = []
 
-    for vol in VOLUMES:
+    plan = load_volume_plan()
+    extra_by_vol: dict[str, list[dict]] = {v["id"]: [] for v in plan}
+
+    # Future articles not yet listed in volumes.json → keyword / handbook_volume fallback.
+    planned_ids = {aid for v in plan for aid in v["article_ids"]}
+    for art in articles:
+        if art["id"] in planned_ids:
+            continue
+        fid = fallback_volume_id(art, analyses, plan)
+        if fid and fid in extra_by_vol:
+            extra_by_vol[fid].append(art)
+
+    article_topics: dict[str, list] = {}
+
+    for vol in plan:
         topics_out = []
-        for topic in vol["topics"]:
-            topic_items = []
-            for aid in topic.get("article_ids") or []:
-                it = by_id.get(str(aid))
-                if not it:
-                    continue
-                topic_items.append(it)
-                used_articles.add(it["id"])
-            related_posts = attach_posts(posts, topic.get("post_keywords") or [], used_posts)
-            topic_items.extend(related_posts)
-            if not topic_items:
+        seq = 0
+        vol_article_ids = list(vol["article_ids"]) + [
+            a["id"] for a in extra_by_vol.get(vol["id"], []) if a["id"] not in planned_ids
+        ]
+        seen_local: set[str] = set()
+        for aid in vol_article_ids:
+            if aid in seen_local:
                 continue
+            seen_local.add(aid)
+            it = by_id.get(str(aid))
+            if not it:
+                continue
+            seq += 1
+            topic_items = [it]
+            used_articles.add(it["id"])
             analysis = build_topic_analysis(topic_items, analyses)
-            minutes = sum(reading_minutes(it["text"]) for it in topic_items if it["kind"] == "article")
-            if minutes == 0:
-                minutes = max(3, sum(reading_minutes(it["text"]) for it in topic_items) // 2)
-            topics_out.append(
-                {
-                    "id": topic["id"],
-                    "num": topic["num"],
-                    "title": topic["title"],
-                    "minutes": minutes,
-                    "article_count": sum(1 for it in topic_items if it["kind"] == "article"),
-                    "post_count": sum(1 for it in topic_items if it["kind"] == "post"),
-                    **analysis,
-                    "items": topic_items,
-                }
-            )
+            title = it.get("title") or f"原文 #{it['id']}"
+            topic = {
+                "id": f"t-{vol['num']}-{seq:02d}",
+                "num": f"{seq:02d}",
+                "title": title.strip(),
+                "minutes": reading_minutes(it["text"]),
+                "article_count": 1,
+                "post_count": 0,
+                **analysis,
+                "items": topic_items,
+            }
+            topics_out.append(topic)
+            article_topics[it["id"]] = topic
+
         if not topics_out:
             continue
         volumes_out.append(
@@ -346,7 +409,7 @@ def main() -> None:
                 "id": vol["id"],
                 "num": vol["num"],
                 "title": vol["title"],
-                "subtitle": vol["subtitle"],
+                "subtitle": vol.get("subtitle") or "",
                 "desc": vol["desc"],
                 "topic_count": len(topics_out),
                 "item_count": sum(len(t["items"]) for t in topics_out),
@@ -354,28 +417,82 @@ def main() -> None:
             }
         )
 
+    assigned_articles = [a for a in articles if a["id"] in used_articles]
+    for post in posts:
+        if post["id"] in used_posts:
+            continue
+        hit = assign_post_to_article(post, assigned_articles)
+        if not hit:
+            continue
+        topic = article_topics.get(hit["id"])
+        if not topic:
+            continue
+        topic["items"].append(post)
+        topic["post_count"] = sum(1 for x in topic["items"] if x["kind"] == "post")
+        used_posts.add(post["id"])
+
     leftover_articles = [a for a in articles if a["id"] not in used_articles]
     leftover_posts = [p for p in posts if p["id"] not in used_posts]
     if leftover_posts:
-        notes_items = leftover_posts
-        analysis = build_topic_analysis(notes_items, analyses)
-        vol6 = next((v for v in volumes_out if v["id"] == "vol-06"), None)
-        notes_topic = {
-            "id": "t-06-99",
-            "num": f"{(len(vol6['topics']) + 1) if vol6 else 6:02d}",
-            "title": "其余推文札记（未命中关键词）",
-            "minutes": 8,
-            "article_count": 0,
-            "post_count": len(notes_items),
-            **analysis,
-            "items": notes_items,
-        }
-        if vol6:
-            vol6["topics"].append(notes_topic)
-            vol6["topic_count"] = len(vol6["topics"])
-            vol6["item_count"] = sum(len(t["items"]) for t in vol6["topics"])
-            used_posts.update(p["id"] for p in leftover_posts)
-            leftover_posts = []
+        # Volume-keyword catch-all, then park remainder on the 心法卷.
+        still = []
+        for p in leftover_posts:
+            placed = False
+            h = haystack(p).lower()
+            for vol in volumes_out:
+                keys = VOLUME_KEYWORDS.get(vol["id"]) or []
+                if keys and any(k.lower() in h for k in keys):
+                    notes = next((t for t in vol["topics"] if t["id"].endswith("-notes")), None)
+                    if not notes:
+                        notes = {
+                            "id": f"t-{vol['num']}-notes",
+                            "num": f"{len(vol['topics']) + 1:02d}",
+                            "title": "本卷相关推文札记",
+                            "minutes": 5,
+                            "article_count": 0,
+                            "post_count": 0,
+                            "takeaways": [],
+                            "quotes": [],
+                            "strategies": [],
+                            "tags": [],
+                            "deepdive": [],
+                            "has_llm": False,
+                            "llm_article_ids": [],
+                            "items": [],
+                        }
+                        vol["topics"].append(notes)
+                    notes["items"].append(p)
+                    notes["post_count"] = len(notes["items"])
+                    used_posts.add(p["id"])
+                    placed = True
+                    break
+            if not placed:
+                still.append(p)
+        leftover_posts = still
+        if leftover_posts:
+            vol_notes = next((v for v in volumes_out if v["id"] == NOTES_VOLUME_ID), volumes_out[-1] if volumes_out else None)
+            if vol_notes:
+                analysis = build_topic_analysis(leftover_posts, analyses)
+                vol_notes["topics"].append(
+                    {
+                        "id": f"t-{vol_notes['num']}-99",
+                        "num": f"{len(vol_notes['topics']) + 1:02d}",
+                        "title": "其余推文札记",
+                        "minutes": 8,
+                        "article_count": 0,
+                        "post_count": len(leftover_posts),
+                        **analysis,
+                        "items": leftover_posts,
+                    }
+                )
+                used_posts.update(p["id"] for p in leftover_posts)
+                leftover_posts = []
+
+    for vol in volumes_out:
+        vol["topic_count"] = len(vol["topics"])
+        vol["item_count"] = sum(len(t["items"]) for t in vol["topics"])
+
+    leftover_articles = [a for a in articles if a["id"] not in used_articles]
     if leftover_articles or leftover_posts:
         leftover_items = leftover_articles + leftover_posts
         analysis = build_topic_analysis(leftover_items, analyses)

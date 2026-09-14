@@ -216,7 +216,7 @@ function renderApp(data) {
     )
     .join("");
   const nav = volumes
-    .map((v) => {
+    .map((v, vi) => {
       const links = v.topics
         .map(
           (t) => `<a class="nav-topic-link" href="#${esc(t.id)}">
@@ -225,7 +225,8 @@ function renderApp(data) {
           </a>`,
         )
         .join("");
-      return `<div class="nav-vol-group" data-vol="${esc(v.id)}">
+      const collapsed = vi === 0 ? "" : " collapsed";
+      return `<div class="nav-vol-group${collapsed}" data-vol="${esc(v.id)}">
         <div class="nav-vol-header">
           <span class="nav-vol-badge">VOL ${esc(v.num)}</span>
           <a class="nav-vol-title" href="#${esc(v.id)}">${esc(v.title.split("·")[0].trim())}</a>
@@ -289,7 +290,7 @@ function renderApp(data) {
           <p class="hero-subtitle">${esc(meta.subtitle)}</p>
           <p class="hero-desc">${esc(meta.description)}</p>
           <div class="method-flow-wrap">
-            <div class="flow-title">期权坤哥卖方决策闭环 · 五步硬核筛法</div>
+            <div class="flow-title">期权坤哥实战决策闭环 · 五步硬核筛法</div>
             <div class="flow-grid">${flow}</div>
           </div>
           <div class="hero-stats-grid">

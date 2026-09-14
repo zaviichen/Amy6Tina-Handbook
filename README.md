@@ -7,17 +7,18 @@
 - **数据**：`data/raw_tweets.json`（已下载 id 请勿重复抓取，只允许按 id 追加）
 - **分析**：`analysis/`（已有的 LLM 精读会编入 Key Takeaways / 机制推演）
 - **规格**：`SITE_SPEC.md`
-- **分卷启发式**：`tools/volume_map.py`（以语料实测为准，`analysis/volume_sketch.md` 仅作假设）
+- **分卷**：`analysis/volumes.json`（11 卷，全量 Articles）+ `tools/build_handbook.py`（编成站点 JSON）
+- **规格**：`SITE_SPEC.md`
 
 ## 站点里有什么
 
 - 中文 UI：开源实战专著徽章、全量篇数、站内免跳阅览
 - 数字条：Articles / Posts / Volumes / Topics
-- 七卷课题：Key Takeaways、机制推演或原文导读、嵌入原文卡片（日期 / 互动 / 全文）
+- 十一卷课题：Key Takeaways、机制推演（来自 `analysis/articles/*.parsed.json`）、嵌入原文卡片（日期 / 互动 / 全文）
 - 客户端全文检索（加载 `public/data/handbook.json`）
 - 致敬与免责声明（**非投资建议，请 DYOR**）
 
-作者原文保持原样，页面文案为中文。尚无 LLM 精读的篇目仍按关键词归入对应卷，并嵌入 `raw_tweets.json` 全文。
+作者原文保持原样，页面文案为中文。新入库、尚未写入 `analysis/volumes.json` 的篇目会按 `handbook_volume` / 关键词归入对应卷，否则进入「未分卷精读」。
 
 ## 本地构建
 
@@ -64,7 +65,7 @@ npm run data
 
 导入新帖时必须跳过 `data/raw_tweets.json` 与 `data/downloaded_ids.txt` 中已有的 id。详见 `README_DATA.md`。
 
-新 id 入库后执行 `python3 tools/build_handbook.py`：脚本按 `tools/volume_map.py` 的明确 id 与关键词把条目编入卷次；未命中的 Articles 进入「未分卷精读」，未命中的 Posts 并入卷六札记。
+新 id 入库后执行 `python3 tools/build_handbook.py`：脚本读取 `analysis/volumes.json` 把 Articles 编入 11 卷（每篇一个课题，附 LLM Key Takeaways）；未列入分卷表的新文章按关键词兜底；Posts 按标题重合挂到对应长文。未命中的 Posts 并入卷十札记。
 
 ## 免责声明
 
