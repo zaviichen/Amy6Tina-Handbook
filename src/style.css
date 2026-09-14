@@ -433,11 +433,20 @@ button, input { font-family: inherit; }
   .layout { flex-direction: column; }
   .mobile-bar { display: flex; }
   .sidebar {
-    width: 100%; height: auto; max-height: none; position: relative;
-    border-right: none; border-bottom: 1px solid var(--border-main);
+    width: 100%;
+    height: auto;
+    max-height: calc(100vh - 52px);
+    position: fixed;
+    top: 52px;
+    left: 0;
+    right: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--border-main);
     display: none;
+    z-index: 400;
+    box-shadow: 0 16px 40px rgba(40, 30, 10, 0.18);
   }
-  .sidebar.open { display: flex; height: auto; max-height: 80vh; }
+  .sidebar.open { display: flex; }
   .main { padding: 24px 16px; }
   .hero-banner, .topic-card, .archive-search-section, .epilogue-box, .download-center, .volume-banner { padding: 22px 18px; }
   .hero-title { font-size: 26px; }

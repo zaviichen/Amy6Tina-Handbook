@@ -265,7 +265,7 @@ function renderApp(data) {
         <div class="sidebar-search-box">
           <div class="search-input-wrap">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/></svg>
-            <input class="sidebar-search-input" type="search" placeholder="检索目录与原文…" data-nav-search />
+            <input class="sidebar-search-input" type="search" placeholder="筛选目录，回车则全文检索…" data-nav-search />
           </div>
         </div>
         <nav class="sidebar-nav" id="sidebar-nav">${nav}
@@ -356,6 +356,21 @@ function bindNav(data) {
   });
   $("[data-top]")?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
   $("[data-toggle-nav]")?.addEventListener("click", () => $("#sidebar")?.classList.toggle("open"));
+  document.querySelectorAll(".sidebar a[href^='#']").forEach((a) => {
+    a.addEventListener("click", () => {
+      if (window.matchMedia("(max-width: 960px)").matches) {
+        $("#sidebar")?.classList.remove("open");
+      }
+    });
+  });
+
+  const jumpArchive = (q) => {
+    const archiveQ = $("[data-archive-q]");
+    if (!archiveQ) return;
+    if (q != null) archiveQ.value = q;
+    archiveQ.dispatchEvent(new Event("input"));
+    document.getElementById("archive")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   const navSearch = $("[data-nav-search]");
   navSearch?.addEventListener("input", () => {
@@ -366,12 +381,12 @@ function bindNav(data) {
       g.style.display = hit ? "" : "none";
       if (q && hit) g.classList.remove("collapsed");
     });
-    if (q.length >= 2) {
-      const archiveQ = $("[data-archive-q]");
-      if (archiveQ && archiveQ.value !== navSearch.value) {
-        archiveQ.value = navSearch.value;
-        archiveQ.dispatchEvent(new Event("input"));
-      }
+  });
+  navSearch?.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      jumpArchive(navSearch.value);
+      $("#sidebar")?.classList.remove("open");
     }
   });
 
