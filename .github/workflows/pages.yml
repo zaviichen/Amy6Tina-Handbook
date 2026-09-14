@@ -1,8 +1,10 @@
-# GitHub Pages — 构建 Vite 静态站并部署到项目页
-# 地址：https://zaviichen.github.io/Amy6Tina-Handbook/
+# GitHub Pages — 构建静态站并发布到
+# https://zaviichen.github.io/Amy6Tina-Handbook/
 #
-# 首次生效：仓库 Settings → Pages → Source 选 GitHub Actions
-# （若尚未开启，本 workflow 在具备 pages:write 权限时会尝试创建 Pages 站点）
+# 两条路径同时走：
+# 1) 官方 actions/deploy-pages（Source = GitHub Actions 时自动启用站点）
+# 2) 把构建产物推到 gh-pages 分支（Settings → Pages → Deploy from branch / gh-pages 可用）
+# 仓库同时提交 docs/，也可选 Deploy from branch / main /docs
 
 name: Deploy GitHub Pages
 
@@ -12,7 +14,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -44,11 +46,20 @@ jobs:
           python3 tools/test_build.py
           npm ci
           npx vite build
+          touch docs/.nojekyll
+
+      - name: Publish gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          force_orphan: true
+          enable_jekyll: false
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: docs
 
   deploy:
     needs: build
@@ -60,3 +71,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true

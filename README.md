@@ -41,7 +41,13 @@ npm run build
 npm run preview
 ```
 
-产物在 `dist/`。GitHub Pages 的 `base` 为 `/Amy6Tina-Handbook/`，本地 preview 使用同一路径。
+产物在 `docs/`（同时用于 GitHub Pages「main / docs」）与 CI 构建。本地 preview：
+
+```bash
+npx vite preview
+```
+
+GitHub Pages 的 `base` 为 `/Amy6Tina-Handbook/`。
 
 单独重新编数据（不启动开发服务器）：
 
@@ -51,13 +57,14 @@ npm run data
 
 ## GitHub Pages 设置
 
-本仓库使用 GitHub Actions（`.github/workflows/pages.yml`）在推送到 `main` 后构建并发布。
+本仓库在推送到 `main` 后由 GitHub Actions 构建并发布（`.github/workflows/pages.yml`）。
 
-1. 打开仓库 **Settings → Pages**
-2. **Source** 选择 **GitHub Actions**
-3. 合并到 `main` 或在 Actions 里手动运行 **Deploy GitHub Pages**
-4. 等待 workflow 变绿后访问  
-   https://zaviichen.github.io/Amy6Tina-Handbook/
+推荐设置（任选其一）：
+
+1. **Settings → Pages → Source → GitHub Actions**（workflow 会尝试自动创建站点）
+2. **Settings → Pages → Deploy from a branch** → `gh-pages` / `(root)`，或 `main` / `/docs`
+
+然后访问 https://zaviichen.github.io/Amy6Tina-Handbook/
 
 若 Pages 尚未开启，具有仓库管理权限的协作者完成上述第 1–2 步即可。站点不会改写 `data/raw_tweets.json`。
 

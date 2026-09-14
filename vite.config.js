@@ -4,7 +4,7 @@ export default defineConfig({
   base: "/Amy6Tina-Handbook/",
   publicDir: "public",
   build: {
-    outDir: "dist",
+    outDir: "docs",
     emptyOutDir: true,
     sourcemap: false,
   },
