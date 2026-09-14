@@ -1,0 +1,28 @@
+{
+  "id": "2091021578415010140",
+  "kind": "article",
+  "title": "做市商不说，但你必须懂的GEX",
+  "topics": [
+    "GEX",
+    "正负Gamma",
+    "市场涨跌方式",
+    "VIX与SKEW背离"
+  ],
+  "key_takeaways": [
+    "GEX描述做市商总Gamma环境，决定涨跌“方式”而非方向。",
+    "正Gamma偏均值回复，负Gamma偏追涨杀跌。",
+    "低VIX高SKEW时尤需GEX语境。",
+    "懂GEX才能理解平静下的暗流。"
+  ],
+  "strategies": [
+    "GEX环境识别",
+    "负Gamma谨慎杠杆"
+  ],
+  "difficulty": "advanced",
+  "handbook_volume": "保证金、做市与跨市场制度",
+  "quotes": [
+    "它告诉你市场会用什么样的方式涨跌。",
+    "表面风平浪静，底层暗流涌动。"
+  ],
+  "summary": "用做市视角讲透GEX：正负Gamma环境决定市场波动形态，帮助散户在低VIX时理解为何仍可能遭遇急跌。"
+}

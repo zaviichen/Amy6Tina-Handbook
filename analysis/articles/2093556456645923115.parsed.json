@@ -1,5 +1,6 @@
 {
   "id": "2093556456645923115",
+  "kind": "article",
   "title": "卖出1张期权，为什么上交所要冻结你5000块，鸭站只要500？",
   "topics": [
     "期权保证金制度",
@@ -30,7 +31,7 @@
     "多市场多策略配置"
   ],
   "difficulty": "intermediate",
-  "handbook_volume": "衍生品与期权卖方卷（Options & Margin Mechanics）",
+  "handbook_volume": "保证金、做市与跨市场制度",
   "quotes": [
     "制度成本 = 你为市场不成熟支付的价格。",
     "当风险可以被实时发现和处置，保证金就不需要为“隔夜最坏情况”预留那么多了。",

@@ -1,5 +1,6 @@
 {
   "id": "2094643748907233320",
+  "kind": "article",
   "title": "佩洛西又出手了：LEAPS老手的1350万美元AI电力豪赌",
   "topics": [
     "LEAPS options",
@@ -28,7 +29,7 @@
     "Defined-Risk Leverage"
   ],
   "difficulty": "intermediate",
-  "handbook_volume": "Options Strategy / LEAPS & Stock Replacement",
+  "handbook_volume": "LEAPS 与股票替代",
   "quotes": [
     "期权不是赌博工具，是思维的延伸。",
     "用期权放大确定性，而不是制造杠杆。",

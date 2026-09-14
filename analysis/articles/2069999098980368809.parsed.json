@@ -1,0 +1,29 @@
+{
+  "id": "2069999098980368809",
+  "kind": "article",
+  "title": "Sell Put不是无脑卖：一个被忽略的估值×IV四象限",
+  "topics": [
+    "估值×IV",
+    "四象限",
+    "Sell Put筛选",
+    "IVP局限"
+  ],
+  "key_takeaways": [
+    "仅IVP>60%就卖Put片面；高IV+差估值可能是价值陷阱。",
+    "需估值与IV二维四象限决策，同一标的估值变化会改变结论。",
+    "IV Rank/Percentile只是维度之一。",
+    "卖方过滤应从单指标升级到矩阵。"
+  ],
+  "strategies": [
+    "估值×IV四象限",
+    "拒绝单看IVP卖Put",
+    "标的质量优先"
+  ],
+  "difficulty": "intermediate",
+  "handbook_volume": "期权卖方基础与轮式策略",
+  "quotes": [
+    "只看IV远远不够。",
+    "Sell Put不是无脑卖。"
+  ],
+  "summary": "修正早年“IVP>60%可卖Put”的片面规则，提出估值与IV四象限框架，避免在高波动垃圾资产上无脑卖保险。"
+}

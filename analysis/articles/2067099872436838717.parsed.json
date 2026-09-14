@@ -1,0 +1,30 @@
+{
+  "id": "2067099872436838717",
+  "kind": "article",
+  "title": "大空头看了SPCX的put，最终放下了手",
+  "topics": [
+    "IV Crush",
+    "超级IPO",
+    "Burry",
+    "高IV买方陷阱",
+    "估值"
+  ],
+  "key_takeaways": [
+    "IV开在极高时，Put/Call“看起来便宜”实则贵，方向对也可能因降波亏损。",
+    "Burry因担心高位稳住后波动退潮而放弃买Put，示范波动率纪律。",
+    "超级IPO首日期权常上演IV crush剧本。",
+    "估值判断与能否付钱买波动是两件独立决策。"
+  ],
+  "strategies": [
+    "回避极端IV买入",
+    "等待降波",
+    "估值与波动分离决策"
+  ],
+  "difficulty": "intermediate",
+  "handbook_volume": "做空、对冲与尾部风险",
+  "quotes": [
+    "IV太高，put看着便宜其实贵。",
+    "方向对了，钱照样亏。"
+  ],
+  "summary": "以Burry放弃SPCX高IV Put为例，讲解超级IPO期权的IV crush陷阱：极端隐波下买方付的是空气溢价，估值看空也不等于该买贵保险。"
+}

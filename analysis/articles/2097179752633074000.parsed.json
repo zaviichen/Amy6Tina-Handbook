@@ -1,0 +1,27 @@
+{
+  "id": "2097179752633074000",
+  "kind": "article",
+  "title": "“零成本”替代正股？我拿特斯拉给你拆一个真实案例",
+  "topics": [
+    "ZEBRA",
+    "股票替代",
+    "Skew",
+    "Pin Risk"
+  ],
+  "key_takeaways": [
+    "ZEBRA用深ITM买权+卖ATM试图净Theta近零，但“零成本”常误导。",
+    "流动性、IV Skew使精确归零几乎不可能。",
+    "临近到期Gamma与提前行权是真坑。",
+    "用TSLA实算展示净成本与风险。"
+  ],
+  "strategies": [
+    "ZEBRA股票替代",
+    "认清隐含成本"
+  ],
+  "difficulty": "advanced",
+  "handbook_volume": "LEAPS 与股票替代",
+  "quotes": [
+    "“零成本”这三个字，是我见过最大的误导。"
+  ],
+  "summary": "用特斯拉案例拆解ZEBRA所谓零成本正股替代：Skew与流动性使Theta难归零，并揭示到期Gamma与提前行权风险。"
+}

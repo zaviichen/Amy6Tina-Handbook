@@ -1,0 +1,32 @@
+{
+  "id": "1852957154980073618",
+  "kind": "article",
+  "title": "美国大选超级周——下周资本市场研判（11月3日）",
+  "topics": [
+    "美国大选",
+    "高IV事件周",
+    "Covered Call",
+    "Collar",
+    "事件后看跌",
+    "Price in"
+  ],
+  "key_takeaways": [
+    "大选超级周三大市场IV普遍抬升，VIX已处约75分位，事件溢价显著。",
+    "选举本身未必改变长期资产配置；更需警惕Trump相关标的与BTC利好已被price in。",
+    "持仓可用Covered Call或Collar平滑波动，而非用选举结果做买卖开关。",
+    "若博弈落地后走势，作者更倾向买入看跌期权，而非追涨主题叙事。"
+  ],
+  "strategies": [
+    "Covered Call",
+    "Collar",
+    "事件周买Put",
+    "避免追涨已定价主题"
+  ],
+  "difficulty": "intermediate",
+  "handbook_volume": "市场观察与宏观事件",
+  "quotes": [
+    "我更倾向于买入看跌期权。",
+    "大概率已经price in。"
+  ],
+  "summary": "大选超级周研判：高IV环境下用备兑与Collar管理持仓，强调选举叙事对资产配置不应过度驱动。对已炒作的政治主题标的，作者认为利好多已定价，若博弈落地更倾向买Put而非追涨。"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "2013120288767238509",
+  "kind": "article",
+  "title": "E005：VIX ETP | 做空波动率ETP——为何我们选择 SVXY？",
+  "topics": [
+    "SVXY",
+    "SVIX",
+    "Volmageddon",
+    "杠杆选择",
+    "空波动率"
+  ],
+  "key_takeaways": [
+    "2018波动率末日后SVXY杠杆降至-0.5，XIV终结；半杠杆从风险回报看反成优势。",
+    "SVIX为-1倍同类暴露，长期Buy&Hold年化未必优于稀释版SVXY，回撤与路径风险更大。",
+    "策略给空波动信号时持有SVXY，优先生存与复利路径而非最大名义杠杆。",
+    "产品选择要理解历史创伤与再平衡机制，不能只看短期弹性。"
+  ],
+  "strategies": [
+    "空波动选用SVXY",
+    "杠杆风险回报权衡",
+    "避开纯名义最大暴露"
+  ],
+  "difficulty": "intermediate",
+  "handbook_volume": "波动率体系：VIX、ETP 与筛选框架",
+  "quotes": [
+    "从风险回报的角度看，这反而成了优势。",
+    "为何我更偏好 -0.5 倍的 SVXY，而非全杠杆的 -1 倍 SVIX。"
+  ],
+  "summary": "对比SVXY与SVIX：借Volmageddon历史说明半杠杆空波动产品在长期风险回报上更优。策略在空波动信号下选择SVXY，强调生存与路径优于追求-1倍名义弹性。"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "2085219217356525988",
+  "kind": "article",
+  "title": "段永平\"减持\"泡泡玛特？全网都解读错了",
+  "topics": [
+    "Put到期",
+    "Covered Call",
+    "轮式兑现",
+    "误读减持"
+  ],
+  "key_takeaways": [
+    "“put expired，部分被call走了”是卖方两头收租，不是信仰崩塌减持。",
+    "低位卖Put、高位卖Call是完整轮式节奏。",
+    "媒体把期权交割误读为二级市场砸盘。",
+    "读懂结构才能读懂持仓变化。"
+  ],
+  "strategies": [
+    "CSP + Covered Call",
+    "披露语言翻译"
+  ],
+  "difficulty": "intermediate",
+  "handbook_volume": "期权卖方基础与轮式策略",
+  "quotes": [
+    "这叫“减持”？这叫两段收租，精准兑现。",
+    "就是put expired，部分被call走了。"
+  ],
+  "summary": "纠正段永平“减持”泡泡玛特的媒体误读：实为Put到期未接货与Call被行权的卖方兑现，属于计划内轮式结果。"
+}

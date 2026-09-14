@@ -1,5 +1,6 @@
 {
   "id": "2092830486456660011",
+  "kind": "article",
   "title": "卖 Put 老亏钱？你可能忽略了这四件事",
   "topics": [
     "期权卖方",
@@ -29,7 +30,7 @@
     "接货意愿与资金管理"
   ],
   "difficulty": "intermediate",
-  "handbook_volume": "期权卖方 / Options Selling",
+  "handbook_volume": "期权卖方基础与轮式策略",
   "quotes": [
     "卖 Put 本质就是卖保险。",
     "四道筛子全过了再下手。少过一道，就不是做交易，是在赌运气。",

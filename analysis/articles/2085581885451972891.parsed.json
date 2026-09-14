@@ -1,0 +1,29 @@
+{
+  "id": "2085581885451972891",
+  "kind": "article",
+  "title": "5000万美元，一个晚上归零",
+  "topics": [
+    "Captain Condor",
+    "0DTE铁鹰",
+    "尾盘Gamma",
+    "J曲线风险"
+  ],
+  "key_takeaways": [
+    "0DTE风险非均匀：尾盘死亡30分钟Gamma爆发可吞噬全天Theta。",
+    "长期稳定卖方策略仍可一夜归零。",
+    "为最后一点时间价值暴露在最大Gamma里是核心矛盾。",
+    "铁鹰在末日轮上的尾部远比回测故事残酷。"
+  ],
+  "strategies": [
+    "避开尾盘裸暴露",
+    "限制0DTE卖方规模",
+    "定义最坏情景"
+  ],
+  "difficulty": "advanced",
+  "handbook_volume": "0DTE 与末日轮实战",
+  "quotes": [
+    "为了最后那点冰块（Theta），你暴露在最大的风（Gamma）里。",
+    "三年积累，一个晚上归零。"
+  ],
+  "summary": "以Captain Condor圣诞夜巨亏复盘0DTE卖方陷阱：风险集中在尾盘Gamma爆发，稳定收租叙事可在一夜终结。"
+}

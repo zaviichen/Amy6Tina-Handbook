@@ -1,5 +1,6 @@
 {
   "id": "2094278739731599762",
+  "kind": "article",
   "title": "做空5.5万亿的英伟达：大空头伯里的期权牌局",
   "topics": [
     "英伟达",
@@ -29,7 +30,7 @@
     "Long convexity / volatility非对称组合"
   ],
   "difficulty": "advanced",
-  "handbook_volume": "期权策略与尾部对冲 / Options Strategy & Tail Hedging",
+  "handbook_volume": "做空、对冲与尾部风险",
   "quotes": [
     "他是在给空头仓位买一份“万一我错了”的保险。",
     "普通散户赌方向，专业玩家管理“赌错”的代价。",

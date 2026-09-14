@@ -1,41 +1,117 @@
-# Handbook Volume Sketch — Amy6Tina / Sober CFA
+# 手册分卷草案（定稿）— Amy6Tina / Sober CFA
 
-Based on the 4 full articles analyzed with DeepSeek flash. Proposed 6 monograph volumes in CJ-DeFi-Handbook style.
+基于全量 **135** 篇 Articles 结构化解析后的分卷体系，对标 CJ-DeFi-Handbook 式中文专著站。
+早期 4 篇 DeepSeek 样例已并入同一 schema（含 `kind`），其余 131 篇按同一字段产出。
 
-## Vol 1 — 期权卖方基础 / Options Selling Foundations
-**Seed articles:** 卖 Put 老亏钱？你可能忽略了这四件事  
-**Themes:** cash-secured put, IV Rank, VRP (IV vs HV), annualized premium, assignment willingness, survivorship over max PnL.  
-**Teaching arc:** sell insurance, not lottery tickets → four-filter checklist → position sizing to assignment cash.
+## 分卷总览
 
-## Vol 2 — 保证金与资金效率 / Margin Mechanics & Capital Efficiency
-**Seed articles:** 卖出1张期权，为什么上交所要冻结你5000块，鸭站只要500？  
-**Themes:** SSE fixed-parameter margin vs US Portfolio Margin (SPAN/TIMS) vs crypto real-time liquidation; iron condor / butterfly / calendar capital relief; institutional cost of immature markets.  
-**Teaching arc:** what margin is protecting → why China costs 3–5× more → optimize under constraints → multi-market allocation.
+| 卷号 | 卷名 | 篇数 |
+|---|---|---|
+| VOLUME 01 | 期权入门与买方思维 | 10 |
+| VOLUME 02 | 期权卖方基础与轮式策略 | 7 |
+| VOLUME 03 | 波动率体系：VIX、ETP 与筛选框架 | 16 |
+| VOLUME 04 | 0DTE 与末日轮实战 | 14 |
+| VOLUME 05 | LEAPS 与股票替代 | 5 |
+| VOLUME 06 | 做空、对冲与尾部风险 | 14 |
+| VOLUME 07 | 保证金、做市与跨市场制度 | 10 |
+| VOLUME 08 | 套利、贴水与量化收租 | 6 |
+| VOLUME 09 | 案例课：名人与机构仓位 | 10 |
+| VOLUME 10 | 交易心法、体系与一人企业 | 18 |
+| VOLUME 11 | 市场观察与宏观事件 | 25 |
+| **合计** | | **135** |
 
-## Vol 3 — LEAPS 与股票替代 / LEAPS & Stock Replacement
-**Seed articles:** 佩洛西又出手了：LEAPS选手的1350万美元AI电力豪赌  
-**Themes:** deep-ITM LEAPS calls (~0.9 delta), defined-risk leverage, long-dated thesis time, thematic “picks and shovels,” STOCK Act disclosure lag.  
-**Teaching arc:** options as thinking extension → stock replacement structure → thesis + horizon match → don’t blindly copy delayed disclosures.
+## VOL01 — 期权入门与买方思维
+**篇数：** 10
+**导读：** 从零建立期权认知：学习路径、经典读物、买方 Timing、因果误区、结构化产品识别与基础工具选择。
+**教学主线：** 建立正确因果与 Timing → 识别结构化陷阱 → 用定义风险表达观点。
+**代表篇目：** 买方为什么总亏钱？因为你在99%不该出手的日子里出手了；年化71%的理财？拆开一看，是枚奇异期权炸弹；赌球庄家根本不看球，凭什么稳赚？期权交易者笑了；世界杯来了，期权人该怎么玩？；五一假期不躺平！力荐2本期权书，假期读完直接开干
+**主题词：** 买方择时, 0DTE高估, 事件日, 随机占优, FCN, 雪球, 障碍期权, 理财包装
 
-## Vol 4 — 做空、对冲与尾部风险 / Shorting, Hedges & Tail Risk
-**Seed articles:** 做空5.5万亿的英伟达：大空头伯里的期权牌局  
-**Themes:** short stock + long puts + protective calls; event-driven call monetization; convexity / long-vol asymmetry; AI bubble timing risk.  
-**Teaching arc:** direction is cheap, survival is expensive → structure the cost of being wrong → when consensus is extreme, buy convexity.
+## VOL02 — 期权卖方基础与轮式策略
+**篇数：** 7
+**导读：** 现金担保 Put、轮式与备兑、IV/估值四象限、接货意愿、恐慌税与长期收租框架。
+**教学主线：** 卖保险而非卖彩票 → IV×估值×接货意愿过滤 → 轮式滚动与兑现。
+**代表篇目：** 卖 Put 老亏钱？你可能忽略了这四件事；段永平"减持"泡泡玛特？全网都解读错了；王宁站在库克和段永平中间：一个期权卖方看到的另一层逻辑；Sell Put不是无脑卖：一个被忽略的估值×IV四象限；恐慌不是风险，是定价错误
+**主题词：** Covered Call, Sell Put建仓, 期权卖方, 卖出看跌期权, IV Rank, 年化收益, Put到期, 轮式兑现
 
-## Vol 5 — 波动率与筛选框架 / Volatility Screening Frameworks
-**Cross-cut from seller + Burry + margin pieces.**  
-**Themes:** IV Rank/percentile, HV vs IV, VRP as edge, when not to sell premium, VIX/tail pricing.  
-**Teaching arc:** measure relative IV → quantify edge → size only when edge and capital match.
+## VOL03 — 波动率体系：VIX、ETP 与筛选框架
+**篇数：** 16
+**导读：** VIX 计算与相对变化、VIX ETP 多空/趋势、晴雨表轮动、VRP 与波动率周期匹配。
+**教学主线：** 读懂 VIX 尺子 → ETP 产品选择 → 晴雨表状态机 → 周期匹配策略。
+**代表篇目：** 年化75%，回撤不到4%：一个被99%投资者忽略的量化策略；英伟达财报前夜，我们两套策略"打架"了；5个月，年化60%，回撤不到5%：一个期权策略的实盘复盘；天天看VIX，你知道它是怎么算出来的吗？；波动率飙到高位，90%的人都在反着做
+**主题词：** VIX晴雨表, 断翼蝶式, SVXY, 波动率交易, VIX多空, 量化信号, 恐惧均值回归, 策略分散
 
-## Vol 6 — 跨市场制度比较与实操手册 / Cross-Market Playbook
-**Cross-cut from margin article + Pelosi/Burry case studies.**  
-**Themes:** A-share ETF options vs US equities options vs crypto options; T+1 vs continuous clearing; retail vs PM accounts; case-study method (Pelosi LEAPS, Burry NVDA).  
-**Teaching arc:** same Greeks, different pipes → pick venue for strategy → case studies as living labs.
+## VOL04 — 0DTE 与末日轮实战
+**篇数：** 14
+**导读：** 零日期权定价尺子、Theta/Gamma 陷阱、行权价校准、买方劣势、铁鹰尾盘风险与跨市场 0DTE。
+**教学主线：** 用对一日尺子 → 识破 Theta/Gamma 骗局 → 买方少出手、卖方控尾盘 → 跨市场警惕。
+**代表篇目：** 他的策略胜率92%，两年却亏了7000万；5000万美元，一个晚上归零；CBOE最新报告：同样的行情，有人赚9.4%，有人赚617%——区别在哪？；你在用30天的尺子，量1天的期权；巴菲特三批0DTE：散户的毒药，高手的金矿
+**主题词：** VIX1D, 0DTE, 0DTE价差, 高胜率陷阱, 交易成本, 市价单, Captain Condor, 0DTE铁鹰
 
-## Optional Vol 7 — 案例课：名人仓位拆解 / Celebrity & Whale Case Studies
-**Seed:** Pelosi LEAPS AI power bet + Burry NVDA short.  
-**Themes:** reconstruct disclosed structures, map to handbook strategies, extract transferable rules (not copy-trade).  
-**Teaching arc:** read the disclosure → identify structure → name the strategy → decide what transfers to your book.
+## VOL05 — LEAPS 与股票替代
+**篇数：** 5
+**导读：** 深实值长期 Call、落袋再加杠杆、ZEBRA/持保结构、核心标的长期仓。
+**教学主线：** 期权是思维延伸 → 深 ITM/LEAPS 替代正股 → 时间维度匹配主题。
+**代表篇目：** “零成本”替代正股？我拿特斯拉给你拆一个真实案例；佩洛西又出手了：LEAPS老手的1350万美元AI电力豪赌；136万港币盈利的小企鹅LEAPS Call实战复盘；腾讯财报炸裂，股价跌6%，我却看到了机会！；佩洛西LEAPS教科书：落袋利润再加杠杆
+**主题词：** ZEBRA, 股票替代, Skew, Pin Risk, LEAPS options, deep-in-the-money calls, stock replacement strategy, AI infrastructure
+
+## VOL06 — 做空、对冲与尾部风险
+**篇数：** 14
+**导读：** 结构化做空、QQQ 尾部、崩盘险、AI/泡沫对冲、拥挤交易与杠杆螺旋。
+**教学主线：** 方向便宜、活着昂贵 → 结构化管理“赌错”代价 → 低波也要防尾部。
+**代表篇目：** 原油破100了，你还在傻买看涨期权？；做空5.5万亿的英伟达：大空头伯里的期权牌局；一家公司，一个季度，烧掉120亿美金；VIX 15的时候，为什么我的策略反而空仓了？；标普创新高，VIX跌到14，但有人在偷偷买崩盘险
+**主题词：** 高IV买Call陷阱, 破蝶式, 原油事件, 工具重于方向, 英伟达, Michael Burry, 期权交易, 做空
+
+## VOL07 — 保证金、做市与跨市场制度
+**篇数：** 10
+**导读：** A 股/美股/加密保证金、ETF 期权性格、港交所扩容、做市/GEX、机构对冲盔甲。
+**教学主线：** 同一 Greeks、不同管道 → 制度成本是价格 → 做市/GEX/对冲盔甲。
+**代表篇目：** 机构卖期权从来不裸卖，背后这套对冲体系，散户必须知道；卖出1张期权，为什么上交所要冻结你5000块，鸭站只要500？；做市商不说，但你必须懂的GEX；22亿美金月交易量背后：做市6年，我最重要的风控不是Greeks；港交所一次加18只股票期权：这个信号，做期权的人都应该看懂
+**主题词：** 垂直价差, Delta对冲, 机构风控, 裸卖禁忌, 期权保证金制度, 上交所ETF期权, 美股Portfolio Margin组合保证金, 加密货币期权平台实时清算
+
+## VOL08 — 套利、贴水与量化收租
+**篇数：** 6
+**导读：** 平价套利、股指贴水滚仓、小资金套利边缘、机构做不了的中等收益策略。
+**教学主线：** 赚市场犯错的钱 → 贴水与平价边缘 → 个人相对机构的激励优势。
+**代表篇目：** 做了12年交易，我发现了一个竞争几乎为零的好生意；套利：期权的终极大杀器，99%的人根本没碰过；巴菲特最赚钱的时候，根本不买股票；年化53%的"捡硬币"策略，7天净赚4093元；年化10%的贴水策略，私募为什么用不起来？
+**主题词：** 结构性优势, 卖保险需求, 对手盘质量, 赛道选择, 真正套利, 纠错, 做市本质, 伪套利
+
+## VOL09 — 案例课：名人与机构仓位
+**篇数：** 10
+**导读：** 佩洛西、伯里、巴菲特、段永平、伯克希尔与 13F 的结构拆解与可迁移规则。
+**教学主线：** 读披露 → 识别结构 → 命名策略 → 决定什么可迁移（不抄作业）。
+**代表篇目：** 段永平敢把95%仓位押一家公司，背后的逻辑其实很多人没看懂；段永平和李录的Q2：两份13F里没人说破的事；巴菲特又出手了，这次回购后BRK和标普谁涨得更多？；219倍PE买宇树？期权人只看到一个数字；1200万赚1.37亿，内幕交易为什么都爱用期权？
+**主题词：** 伯克希尔回购, 段永平, 集中投资, 机会成本, 双核四卫星, 只买第一, 13F, 拼多多
+
+## VOL10 — 交易心法、体系与一人企业
+**篇数：** 18
+**导读：** 知行鸿沟、绝望之谷、一人企业、风控哲学、专业基本功与人生买方隐喻。
+**教学主线：** 从知道到做到 → 最后一米与一人企业 → 风控哲学焊进生活。
+**代表篇目：** 做期权12年，我把所有指标都删了，只留下一件事儿；想做专业期权交易员？先把这两项底层基本功焊死；中年人最大的悲哀，一辈子只在收取权利金；做了12年期权，为什么我再也不想碰股票和期货；你在期权上"自学"了多少钱？
+**主题词：** 机会成本, 能力圈, 技术分析本质, 盈亏比, 进场位置, 删指标, 理智, 底层认知
+
+## VOL11 — 市场观察与宏观事件
+**篇数：** 25
+**导读：** 周报复盘、利率与通胀、主题事件（特斯拉/原油/黄金/港股制度）中的期权视角。
+**教学主线：** 周频观察降噪 → 利率/事件锚定 → 主题降维到可执行结构。
+**代表篇目：** 30年美债5.3%，TLT创历史新低：这一次谁会被献祭？；央行连续21个月买黄金，7月加码最猛的一次；特斯拉一周跌17%、美联储9月加息铁板钉钉——本周是今年最危险的"超级周"；特斯拉卖疯了，却跌惨了；压了港股6年的石头，终于落地了
+**主题词：** 长端利率, 降息背离, 历史献祭, 资产重估, 央行购金, 散户背离, 去美元化, 黄金趋势
 
 ---
-**Coverage note:** Current corpus is seller-heavy (puts, margin) with two advanced case studies (LEAPS long, structured short). Next scrape priorities: covered calls, spreads construction drills, Greeks primers, and more A-share ETF option walkthroughs to flesh Vols 1–2 and 5.
+
+## 相对初稿的修订说明
+
+1. **由假设 6–7 卷扩展为 11 卷**：全库并非“卖方+两则案例”为主，而是同时覆盖 VIX ETP 系列、0DTE 专题、套利贴水、做市制度、心法体系与大量市场观察。
+2. **波动率独立成卷（Vol03）**：E002–E011 与 VIX 计算/晴雨表/多空实盘构成完整教材链，不宜再只作“横切主题”。
+3. **0DTE 独立成卷（Vol04）**：从科普、Theta/Gamma、VRP、港交所引入到铁鹰归零，已足够支撑专著章节。
+4. **案例课保留并扩容（Vol09）**：佩洛西/伯里之外，大量巴菲特、段永平、13F、回购信号进入同一方法论。
+5. **市场观察（Vol11）篇数最多**：作为“活的实验室”卷，服务站点检索与时间线，而非冲淡策略硬核卷。
+6. **覆盖缺口**：卖方轮式与 LEAPS 相对仍可继续增补；但保证金/跨市场、套利、买方 Timing 已显著好于初稿预期。
+
+## 数据与路径
+
+- 原文语料：`data/raw_tweets.json`（勿删）
+- 单篇解析：`analysis/articles/<id>.parsed.json`（135）
+- 总索引：`analysis/articles_index.json`
+- 分卷结构：`analysis/volumes.json`
+

@@ -1,0 +1,28 @@
+{
+  "id": "2079784093374689320",
+  "kind": "article",
+  "title": "你在用30天的尺子，量1天的期权",
+  "topics": [
+    "VIX1D",
+    "0DTE尺子",
+    "IV溢价成分",
+    "科创振幅"
+  ],
+  "key_takeaways": [
+    "VIX是30天尺子，做0DTE应看VIX1D等一日尺度。",
+    "0DTE IV含事件溢价、做市对冲成本与散户情绪，常系统性偏高。",
+    "VIX1D与0DTE IV价差才是真正信号。",
+    "用错期限尺子会把送分波动当成随机惊吓。"
+  ],
+  "strategies": [
+    "用VIX1D管理0DTE",
+    "读取IV溢价拆解"
+  ],
+  "difficulty": "advanced",
+  "handbook_volume": "0DTE 与末日轮实战",
+  "quotes": [
+    "你用30天的尺子量1天的期权。",
+    "两者之间的价差，就是0DTE交易者的真正信号。"
+  ],
+  "summary": "纠正用VIX指导0DTE的错误：应以VIX1D匹配一日期限，并理解0DTE IV中的额外溢价成分，用价差而非点位做决策。"
+}

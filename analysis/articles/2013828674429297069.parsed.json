@@ -1,0 +1,30 @@
+{
+  "id": "2013828674429297069",
+  "kind": "article",
+  "title": "E006：VIX ETP | 为何我们不选 ZVOL？",
+  "topics": [
+    "ZVOL",
+    "ZIV",
+    "中期VIX期货",
+    "保守波动策略",
+    "产品摘牌"
+  ],
+  "key_takeaways": [
+    "ZIV/ZVOL跟踪更远月（M4–M7）VIX期货，期限结构更平坦，大跌时波动通常小于近月产品。",
+    "Volmageddon中中期产品回撤控制优于近月XIV类，但作者并非Buy&Hold，且事前已转现金。",
+    "产品曾因发行人清理ETN业务摘牌，提醒ETP/ETN有发行人与结构风险。",
+    "当前主策略仍偏好SVXY：信号响应与流动性/特性更匹配，而非一味选更“保守”的远月。"
+  ],
+  "strategies": [
+    "远月波动ETP认知",
+    "主策略坚持SVXY",
+    "关注发行人与摘牌风险"
+  ],
+  "difficulty": "intermediate",
+  "handbook_volume": "波动率体系：VIX、ETP 与筛选框架",
+  "quotes": [
+    "本质上ZIV、ZIVB、ZVOL都是同一个东西。",
+    "为什么SVXY也比ZIV更好。"
+  ],
+  "summary": "解释为何主策略不选ZVOL：远月产品更抗极端回撤，但信号灵敏度、流动性与组合定位使SVXY更合适；并提醒历史摘牌说明发行人风险不可忽视。"
+}
