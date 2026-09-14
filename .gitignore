@@ -8,3 +8,4 @@ __pycache__/
 node_modules/
 dist/
 .cache/
+tools/__pycache__/
