@@ -1,13 +1,14 @@
 {
-  "count": 129,
-  "article_count": 87,
+  "count": 177,
+  "article_count": 135,
   "post_count": 42,
   "oldest_date": "2024-09-30T05:21:32.000Z",
   "newest_date": "2026-09-14T11:56:38.000Z",
   "catalog_size": 135,
-  "downloaded_ids": 129,
-  "notes": "Local corpus canonical. Bodies via api.fxtwitter.com/2/thread/{id} with UA retries. Skip full bodies already in raw. fxtwitter importer stopped on not_article; browser worker extracting remaining via x.com/Amy6Tina/article/<id>.",
-  "updated_at": "2026-09-14T14:04:45.236599Z",
-  "full_article_bodies": 87,
-  "remaining_catalog_bodies": 48
+  "catalog_bodies_complete": true,
+  "github": "https://github.com/zaviichen/Amy6Tina-Handbook",
+  "pages_pr": "https://github.com/zaviichen/Amy6Tina-Handbook/pull/1",
+  "pages_planned": "https://zaviichen.github.io/Amy6Tina-Handbook/",
+  "notes": "All 135 catalog articles have full bodies (>=200 chars). Do not redownload existing ids.",
+  "updated_at": "2026-09-14T14:13:21.134275+00:00"
 }

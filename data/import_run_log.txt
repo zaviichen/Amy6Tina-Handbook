@@ -31,3 +31,8 @@ STOPPED further fxtwitter retries for not_article per parent steering; browser o
 raw_tweets.json valid JSON array; kinds={article,post}; dedupe_rewritten=False
 refreshed: downloaded_ids.txt (129 ids), scrape_status.json, body_export_progress.json
 {"finished_at": "2026-09-14T14:04:45.237018+00:00", "before": {"raw": 75, "articles": 26, "posts": 49, "catalog": 135, "to_fetch": 109}, "after": {"raw": 129, "articles": 87, "full_article_bodies_ge_200": 87, "posts": 42, "catalog": 135}, "newly_imported_full_articles": 61, "fxtwitter_ok_approx": 61, "fxtwitter_persistent_not_article_or_empty": 48, "remaining_missing_for_browser": 48, "date_span_corpus": ["2024-09-30T05:21:32.000Z", "2026-09-14T11:56:38.000Z"], "date_span_full_articles": ["2024-09-30T05:21:32.000Z", "2026-09-14T04:22:41.000Z"], "raw_rewritten_for_dedupe": false, "handoff": "Browser worker continues remaining catalog ids via x.com/Amy6Tina/article/<id>. Do not redownload ids already in downloaded_ids.txt with full bodies."}
+retry_checkpoint n=40/68 raw=149 articles=107 remaining=28 ok=40 fail=0
+retry_checkpoint n=60/68 raw=169 articles=127 remaining=8 ok=60 fail=0
+retry_checkpoint n=68/68 raw=176 articles=134 remaining=1 ok=67 fail=1
+retry end 2026-09-14T14:07:22.334395+00:00
+after: {"raw": 176, "articles": 134, "posts": 42, "newly_imported_this_pass": 67, "failures": 1, "remaining_missing": 1, "article_oldest": "2024-09-30T05:21:32.000Z", "article_newest": "2026-09-14T04:22:41.000Z", "persistent_error_ids": ["2013120288767238509"]}
