@@ -43,24 +43,44 @@
     "2078695797852606649",
     "2080872026487898546",
     "2081957554872283291",
+    "2082683569760350593",
+    "2083045207139029096",
+    "2083407152190988301",
+    "2083769676581224932",
     "2084132613363781971",
+    "2084494381424472165",
     "2084858678285656303",
+    "2085219217356525988",
     "2085581885451972891",
     "2085944849786921208",
+    "2086332494333489598",
     "2086671954296312218",
     "2087032980334338328",
+    "2087394682091545078",
     "2087757798621032472",
     "2088118707667218791",
+    "2088482902812287006",
     "2088844713197703630",
+    "2089205750631743804",
+    "2089570580580474883",
+    "2089741853549789631",
     "2089931076554887488",
     "2090292488103969101",
+    "2090655741078368584",
+    "2091021578415010140",
     "2091741606017941549",
+    "2092104346096071064",
     "2092466831990923529",
     "2092830486456660011",
     "2093556456645923115",
     "2094278739731599762",
     "2094643748907233320",
+    "2095003621872279566",
     "2095366111479152987",
+    "2095728491786551636",
+    "2096091344498557422",
+    "2096461080105255174",
+    "2096815852377329969",
     "2097179752633074000",
     "2097541631960555564",
     "2097898951517323537",
@@ -68,349 +88,249 @@
     "2098989937668538380",
     "2099353114180714640"
   ],
-  "remaining": 68,
-  "last_id": "2009466837491437638",
+  "remaining": 48,
+  "last_id": "2099353114180714640",
   "errors": [
     {
-      "id": "2096815852377329969",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:33.357078+00:00"
-    },
-    {
-      "id": "2096461080105255174",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:34.483759+00:00"
-    },
-    {
-      "id": "2096091344498557422",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:35.658219+00:00"
-    },
-    {
-      "id": "2095728491786551636",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:37.292511+00:00"
-    },
-    {
-      "id": "2095003621872279566",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:38.996071+00:00"
-    },
-    {
-      "id": "2092104346096071064",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:41.071038+00:00"
-    },
-    {
-      "id": "2091021578415010140",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:42.098228+00:00"
-    },
-    {
-      "id": "2090655741078368584",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:43.150475+00:00"
-    },
-    {
-      "id": "2089741853549789631",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:46.885160+00:00"
-    },
-    {
-      "id": "2089570580580474883",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:47.941606+00:00"
-    },
-    {
-      "id": "2089205750631743804",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:49.561345+00:00"
-    },
-    {
-      "id": "2088482902812287006",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:51.462097+00:00"
-    },
-    {
-      "id": "2087394682091545078",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:55.638005+00:00"
-    },
-    {
-      "id": "2086332494333489598",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T13:59:59.022901+00:00"
-    },
-    {
-      "id": "2085219217356525988",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:03.246650+00:00"
-    },
-    {
-      "id": "2084494381424472165",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:06.781670+00:00"
-    },
-    {
-      "id": "2083769676581224932",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:11.999741+00:00"
-    },
-    {
-      "id": "2083407152190988301",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:13.280851+00:00"
-    },
-    {
-      "id": "2083045207139029096",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:15.168035+00:00"
-    },
-    {
-      "id": "2082683569760350593",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:16.414792+00:00"
-    },
-    {
       "id": "2082319731428860030",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:17.520972+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236786+00:00"
     },
     {
       "id": "2081594874332414095",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:19.921362+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236791+00:00"
     },
     {
       "id": "2081253974691508688",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:21.520917+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236793+00:00"
     },
     {
       "id": "2080507969888825631",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:24.193839+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236795+00:00"
     },
     {
       "id": "2080150571106136571",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:27.176193+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236796+00:00"
     },
     {
       "id": "2079784093374689320",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:28.421882+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236797+00:00"
     },
     {
       "id": "2079420667326546336",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:29.820218+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236798+00:00"
     },
     {
       "id": "2079061585587536143",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:31.382230+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236800+00:00"
     },
     {
       "id": "2077608956697170120",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:35.829733+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236801+00:00"
     },
     {
       "id": "2077044366196310296",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:38.441606+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236802+00:00"
     },
     {
       "id": "2076165296499597434",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:41.636043+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236803+00:00"
     },
     {
       "id": "2075804297800065107",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:44.362683+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236804+00:00"
     },
     {
       "id": "2075410984341213570",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:49.621651+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236805+00:00"
     },
     {
       "id": "2073307213813457189",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:54.673974+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236806+00:00"
     },
     {
       "id": "2072899956848152949",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:56.021984+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236807+00:00"
     },
     {
       "id": "2072536403259592997",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:57.232873+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236808+00:00"
     },
     {
       "id": "2072173665891000584",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:00:58.421057+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236809+00:00"
     },
     {
       "id": "2071086709413204046",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:01.812232+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236810+00:00"
     },
     {
       "id": "2069275429270417786",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:12.470270+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236811+00:00"
     },
     {
       "id": "2068572352972243284",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:13.780442+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236812+00:00"
     },
     {
       "id": "2068186873965768874",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:14.994953+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236813+00:00"
     },
     {
       "id": "2067832506301530281",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:16.234207+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236816+00:00"
     },
     {
       "id": "2067099872436838717",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:18.294809+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236818+00:00"
     },
     {
       "id": "2066340982728327400",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:22.323482+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236819+00:00"
     },
     {
       "id": "2065786150095319261",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:23.422696+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236820+00:00"
     },
     {
       "id": "2065295003556200778",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:24.633125+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236821+00:00"
     },
     {
       "id": "2064926893871419626",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:26.236934+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236822+00:00"
     },
     {
       "id": "2060943405614805398",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:29.908372+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236824+00:00"
     },
     {
       "id": "2047166753588084833",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:36.668616+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236826+00:00"
     },
     {
       "id": "2042514328574923112",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:38.801759+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236828+00:00"
     },
     {
       "id": "2042097657695388004",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:40.104397+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236830+00:00"
     },
     {
       "id": "2041729924420038967",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:41.372667+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236832+00:00"
     },
     {
       "id": "2041042794974785563",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:43.064391+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236833+00:00"
     },
     {
       "id": "2039916758140908020",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:45.250172+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236835+00:00"
     },
     {
       "id": "2038124573053637065",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:46.698815+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236837+00:00"
     },
     {
       "id": "2036313513132695875",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:48.295517+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236838+00:00"
     },
     {
       "id": "2026872405654908938",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:54.248662+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236842+00:00"
     },
     {
       "id": "2026484954444747217",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:55.369062+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236844+00:00"
     },
     {
       "id": "2026146506768794012",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:56.752934+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236845+00:00"
     },
     {
       "id": "2025075317778571398",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:57.876206+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236847+00:00"
     },
     {
       "id": "2024436545327968489",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:01:59.301150+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236849+00:00"
     },
     {
       "id": "2021801090363310287",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:02:03.960608+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236850+00:00"
     },
     {
       "id": "2016747512103907563",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:02:05.139834+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236852+00:00"
     },
     {
       "id": "2016366237815865641",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:02:10.902961+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236854+00:00"
     },
     {
       "id": "2016003143306510418",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:02:12.075235+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236857+00:00"
     },
     {
       "id": "2013828674429297069",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:02:14.102821+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236859+00:00"
     },
     {
       "id": "2013120288767238509",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:02:15.449694+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236861+00:00"
     },
     {
       "id": "2011652540753199488",
-      "error": "ValueError: not_article",
-      "at": "2026-09-14T14:02:16.535945+00:00"
+      "error": "not_article_via_fxtwitter_handoff_to_browser",
+      "at": "2026-09-14T14:04:45.236863+00:00"
     }
   ],
-  "note": "Re-run using /2/thread/{id} after status endpoint returned empty article bodies for most ids."
+  "note": "Stopped fxtwitter retries for not_article. Browser worker owns remaining bodies from x.com/Amy6Tina/article/<id>."
 }

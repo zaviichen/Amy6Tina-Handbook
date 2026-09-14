@@ -1,11 +1,13 @@
 {
-  "count": 114,
-  "article_count": 67,
-  "post_count": 47,
+  "count": 129,
+  "article_count": 87,
+  "post_count": 42,
   "oldest_date": "2024-09-30T05:21:32.000Z",
   "newest_date": "2026-09-14T11:56:38.000Z",
   "catalog_size": 135,
-  "downloaded_ids": 114,
-  "notes": "Local corpus is canonical. Full article bodies via api.fxtwitter.com/2/thread/{id}. Skip ids with full bodies already in raw_tweets.json.",
-  "updated_at": "2026-09-14T14:02:18.681864Z"
+  "downloaded_ids": 129,
+  "notes": "Local corpus canonical. Bodies via api.fxtwitter.com/2/thread/{id} with UA retries. Skip full bodies already in raw. fxtwitter importer stopped on not_article; browser worker extracting remaining via x.com/Amy6Tina/article/<id>.",
+  "updated_at": "2026-09-14T14:04:45.236599Z",
+  "full_article_bodies": 87,
+  "remaining_catalog_bodies": 48
 }

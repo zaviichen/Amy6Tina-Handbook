@@ -14,3 +14,20 @@ checkpoint n=100/108 raw=112 articles=65 remaining=70 ok=38 fail=62
 checkpoint n=108/108 raw=114 articles=67 remaining=68 ok=40 fail=68
 thread-endpoint re-run end 2026-09-14T14:02:18.682002+00:00
 after: {"raw": 114, "articles": 67, "posts": 47, "catalog": 135, "newly_imported": 40, "failures": 68, "remaining_missing": 68, "article_oldest": "2024-09-30T05:21:32.000Z", "article_newest": "2026-09-14T04:22:41.000Z", "corpus_oldest": "2024-09-30T05:21:32.000Z", "corpus_newest": "2026-09-14T11:56:38.000Z", "persistent_error_count": 68, "persistent_errors_sample": [{"id": "2096815852377329969", "error": "ValueError: not_article", "at": "2026-09-14T13:59:33.357078+00:00"}, {"id": "2096461080105255174", "error": "ValueError: not_article", "at": "2026-09-14T13:59:34.483759+00:00"}, {"id": "2096091344498557422", "error": "ValueError: not_article", "at": "2026-09-14T13:59:35.658219+00:00"}, {"id": "2095728491786551636", "error": "ValueError: not_article", "at": "2026-09-14T13:59:37.292511+00:00"}, {"id": "2095003621872279566", "error": "ValueError: not_article", "at": "2026-09-14T13:59:38.996071+00:00"}, {"id": "2092104346096071064", "error": "ValueError: not_article", "at": "2026-09-14T13:59:41.071038+00:00"}, {"id": "2091021578415010140", "error": "ValueError: not_article", "at": "2026-09-14T13:59:42.098228+00:00"}, {"id": "2090655741078368584", "error": "ValueError: not_article", "at": "2026-09-14T13:59:43.150475+00:00"}, {"id": "2089741853549789631", "error": "ValueError: not_article", "at": "2026-09-14T13:59:46.885160+00:00"}, {"id": "2089570580580474883", "error": "ValueError: not_article", "at": "2026-09-14T13:59:47.941606+00:00"}, {"id": "2089205750631743804", "error": "ValueError: not_article", "at": "2026-09-14T13:59:49.561345+00:00"}, {"id": "2088482902812287006", "error": "ValueError: not_article", "at": "2026-09-14T13:59:51.462097+00:00"}, {"id": "2087394682091545078", "error": "ValueError: not_article", "at": "2026-09-14T13:59:55.638005+00:00"}, {"id": "2086332494333489598", "error": "ValueError: not_article", "at": "2026-09-14T13:59:59.022901+00:00"}, {"id": "2085219217356525988", "error": "ValueError: not_article", "at": "2026-09-14T14:00:03.246650+00:00"}]}
+
+--- retry with multi-UA start 2026-09-14T14:03:11.049330+00:00 ---
+before: {"raw": 114, "articles": 67, "to_fetch": 68}
+retry_checkpoint n=20/68 raw=129 articles=87 remaining=48 ok=20 fail=0
+
+=== FINAL fxtwitter import summary 2026-09-14T14:04:45.237018+00:00 ===
+BEFORE: raw=75 articles=26 posts=49 catalog=135 to_fetch=109
+AFTER:  raw=129 articles=87 full_bodies>=87 posts=42 catalog=135
+newly_imported_full_articles: 61
+persistent_fxtwitter_failures_remaining: 48 (handed off to browser worker)
+date_span_corpus: 2024-09-30T05:21:32.000Z -> 2026-09-14T11:56:38.000Z
+date_span_full_articles: 2024-09-30T05:21:32.000Z -> 2026-09-14T04:22:41.000Z
+method: api.fxtwitter.com/2/thread/{id} (status endpoint often omitted article.blocks)
+STOPPED further fxtwitter retries for not_article per parent steering; browser owns remainder.
+raw_tweets.json valid JSON array; kinds={article,post}; dedupe_rewritten=False
+refreshed: downloaded_ids.txt (129 ids), scrape_status.json, body_export_progress.json
+{"finished_at": "2026-09-14T14:04:45.237018+00:00", "before": {"raw": 75, "articles": 26, "posts": 49, "catalog": 135, "to_fetch": 109}, "after": {"raw": 129, "articles": 87, "full_article_bodies_ge_200": 87, "posts": 42, "catalog": 135}, "newly_imported_full_articles": 61, "fxtwitter_ok_approx": 61, "fxtwitter_persistent_not_article_or_empty": 48, "remaining_missing_for_browser": 48, "date_span_corpus": ["2024-09-30T05:21:32.000Z", "2026-09-14T11:56:38.000Z"], "date_span_full_articles": ["2024-09-30T05:21:32.000Z", "2026-09-14T04:22:41.000Z"], "raw_rewritten_for_dedupe": false, "handoff": "Browser worker continues remaining catalog ids via x.com/Amy6Tina/article/<id>. Do not redownload ids already in downloaded_ids.txt with full bodies."}

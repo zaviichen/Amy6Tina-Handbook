@@ -14,5 +14,16 @@
   "non_article_candidates_skipped": [
     "1837757776145305706",
     "1832381935362175375"
-  ]
+  ],
+  "resolution_checked_at": "2026-09-14T14:03:00Z",
+  "api_not_article_resolution": "Direct X status pages for failed catalog IDs render the Article view; the canonical focus-mode route is https://x.com/Amy6Tina/article/<status_id>. Example verified in-browser: 2099353114180714640 and 2009466837491437638. The prior i/article/<internal-id> route redirects to /Amy6Tina/article/<status_id>; status API may still say not_article.",
+  "real_article_status_ids_resolved": 68,
+  "resolved_file": "article_ids_resolved.txt",
+  "resolved_file_format": "JSONL with id, status_url, article_url, title, date, resolution",
+  "resolved_ids_are_catalog_ids": true,
+  "thread_import_after_resolution": {
+    "raw": 114,
+    "article_records": 67,
+    "remaining_api_failures": 68
+  }
 }
