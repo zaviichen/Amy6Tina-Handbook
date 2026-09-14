@@ -1,0 +1,16 @@
+{
+  "name": "amy6tina-handbook",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "期权坤哥实战手册 · Amy6Tina-Handbook",
+  "scripts": {
+    "data": "python3 tools/build_handbook.py",
+    "dev": "python3 tools/build_handbook.py && vite",
+    "build": "python3 tools/build_handbook.py && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
+  }
+}
